@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang = "en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content=" width= device-width, initial-scale=1.0">
+    <title>Vietnamese Traditional Food</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">PT2H</a>
+        <input id="checkbox" type="checkbox">
+        <label class="toggle" for="checkbox" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+            <div id="bar1" class="bars"></div>
+            <div id="bar2" class="bars"></div>
+            <div id="bar3" class="bars"></div>
+        </label>
+        <div class="navigation" id="nav">
+            <div class="navigation-items">
+                <a href="#">Home</a>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="placesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Places to go
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="placesDropdown">
+                        <a class="dropdown-item" href="#">Northern Vietnam</a>
+                        <a class="dropdown-item" href="#">Central Vietnam</a>
+                        <a class="dropdown-item" href="#">Southern Vietnam</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="specialDishDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Special Dish
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="specialDishDropdown">
+                        <a class="dropdown-item" href="#">Northern Vietnam</a>
+                        <a class="dropdown-item" href="#">Central Vietnam</a>
+                        <a class="dropdown-item" href="#">Southern Vietnam</a>
+                    </div>
+                </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="container dark-theme">
+                        <input checked="" class="checkbox" type="checkbox"> 
+                        <div class="mainbox">
+                            <div class="iconContainer">
+                                <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+                                    <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path>
+                                </svg>
+                            </div>
+                            <input class="search_input" placeholder="search" type="text">
+                        </div>
+                    </div>
+                </form>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">Vietnamese</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class = "Home">
+        <video class = "video-slide active" src="video.mp4" autoplay muted loop></video>
+        <video class = "video-slide" src="video1.mp4" autoplay muted loop></video>
+        <video class = "video-slide" src="video2.mp4" autoplay muted loop></video>
+        <div class="content active">
+            <h1>About us</h1>
+            <p>
+                Hey there! We are the PH2H team, and we're super excited to have you on our website.
+                Our team consists of four amazing members - Phuong, Minh Hau, Thanh Hau, and Trang.
+                We created this website to help you discover the rich culture of Vietnam through its traditional food and must-visit places. 
+                Our aim is to provide you with useful information that you can rely on. 
+                We hope you'll enjoy exploring our website and have a great time with us!
+            </p>
+        </div>
+        <div class="content">
+            <h1>Vietnam</h1>
+            <p>
+                Vietnam is a breathtakingly beautiful country situated in Southeast Asia. 
+                It boasts of a diverse and rich culture that has been shaped by its complex history, and is home to over 96 million people. 
+                The country is a melting pot of different ethnic groups, each with their own distinct customs and traditions. 
+                From the bustling cities to the serene countryside, Vietnam is a land of contrasts that offers a unique and unforgettable travel experience. 
+                The country is also renowned for its mouth-watering cuisine, which is a blend of different flavors and ingredients that reflect its cultural diversity. 
+                Whether it's exploring the ancient temples, cruising along the Mekong Delta, or simply indulging in some delicious street food, Vietnam has something to offer for everyone. 
+                So come and discover the magic of Vietnam with us!
+            </p>
+        </div>
+        <div class="content">
+            <h1>Vietnamese Cuisine</h1>
+            <p>
+                Vietnamese cuisine is renowned for its vibrant and diverse range of flavors, textures, and ingredients. 
+                The cuisine is characterized by its emphasis on fresh herbs, vegetables, and proteins, which are used to create dishes with a delicate balance of sweet, sour, spicy, and salty flavors. 
+                The cuisine's unique cooking techniques, such as grilling, steaming, and stir-frying, are designed to preserve the natural flavors and nutrients of the ingredients. 
+                Some of the most famous Vietnamese dishes include pho, a hearty soup made with rice noodles, herbs, and meat or seafood; banh mi, a crusty French baguette filled with savory meats, pickled vegetables, and cilantro; and spring rolls, a light and refreshing appetizer made with rice paper, vermicelli noodles, shrimp or pork, and fresh herbs. 
+                Overall, Vietnamese cuisine is a must-try for food lovers seeking a delicious and healthy culinary experience.
+            </p>
+        </div>
+        <div class = "slider-navigation">
+            <div class = "nav-btn active"></div>
+            <div class = "nav-btn"></div>
+            <div class = "nav-btn"></div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/JavaScript">
+        document.getElementById('checkbox').addEventListener('change', function() {
+        var navigation = document.getElementById('nav');
+        if(this.checked) {
+        navigation.classList.add('active');
+        } else {
+        navigation.classList.remove('active');
+        }
+        });
+        $(document).ready(function(){
+            $('.dropdown').on('mouseover', function(){
+                $('.dropdown-toggle', this).trigger('click');
+            });
+        });
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+        var sliderNav = function(manual) {
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            });
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
