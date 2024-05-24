@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Food</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="central_food.css">
+    <link rel="stylesheet" type="text/css" href="/nav.css">
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <header>
+        <a href="/home.html" class="brand">PT2H</a>
+        <input id="checkbox" type="checkbox">
+        <label class="toggle" for="checkbox" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+            <div id="bar1" class="bars"></div>
+            <div id="bar2" class="bars"></div>
+            <div id="bar3" class="bars"></div>
+        </label>
+        <div class="navigation" id="nav">
+            <div class="navigation-items">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="/home.html" >Home</a>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="/home.html" >About</a>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="placesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Places to go
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="placesDropdown">
+                        <a class="dropdown-item" href="#">Northern Vietnam</a>
+                        <a class="dropdown-item" href="#">Central Vietnam</a>
+                        <a class="dropdown-item" href="#">Southern Vietnam</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="specialDishDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Special Dishes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="specialDishDropdown">
+                        <a class="dropdown-item" href="#">Northern Vietnam</a>
+                        <a class="dropdown-item" href="\special_dishes\central_food.html">Central Vietnam</a>
+                        <a class="dropdown-item" href="#">Southern Vietnam</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">Vietnamese</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="/home.html" >Contact</a>
+                </div>
+                <div class="container">
+                    <input checked="" class="checkbox" type="checkbox"> 
+                    <div class="mainbox">
+                        <div class="iconContainer">
+                            <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+                        </div>
+                     <input class="search_input" placeholder="search" type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="slider">
+        <div class="slide active">
+            <section class="img-slide" style="background-color: white; background-image: url('/Images_Chang/QuangNam.jpg');">
+                <div class="province">
+                    <h1 data-text="QUANG NAM">QUANG NAM</h1>
+                </div>
+            </section>
+            <section class="img-gallery">
+                    <div class="slider-wrapper">
+                        <div class="slider-item">
+                            <h3>MI QUANG</h3>
+                            <figure>
+                                <img src="/Images_Chang/MiQuang.jpg" alt="Mi Quang" data-target="#mi-quang">
+                            </figure>
+                        </div>
+                        <div class="slider-item">
+                            <h3>CAO LAU</h3>
+                            <figure>
+                                <img src="/Images_Chang/CaoLau.jpg" alt="Cao Lau" data-target="#cao-lau">
+                            </figure>
+                        </div>
+                        <div class="slider-item">
+                            <h3>BANH TRANG</h3>
+                            <figure>
+                                <img src="/Images_Chang/BanhTrang.jpg" alt="Banh Trang" data-target="#banh-trang">
+                            </figure>
+                        </div>
+                        <div class="slider-item">
+                            <h3>NEM NUONG</h3>
+                            <figure>
+                                <img src="/Images_Chang/NemNuong.webp" alt="Nem Nuong" data-target="#nem-nuong">
+                            </figure>
+                        </div>
+                        <div class="slider-item">
+                            <h3>BANH CANH</h3>
+                            <figure>
+                                <img src="/Images_Chang/BanhCanh.jpg" alt="Banh Canh" data-target="#banh-canh">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="slider-progress">
+                        <div class="slider-progress-bar"></div>
+                    </div>
+            </section>
+            <section class="sec-1 show" id="mi-quang">
+                <img class="animate" id="imgfood" style="--i:0" src="/Images_Chang/MiQuang.jpg" alt="Mi Quang" title="Mi Quang">
+                <div class="text">
+                    <h2 class="animate" style="--i:1">Mi Quang</h2>
+                    <p class="animate" style="--i:2">When you come to Quang Nam, you won't find it difficult to come across a Quang noodle shop at every corner. 
+                        Quang noodles here are as popular as pho in Hanoi. In addition to the main ingredients of thin sliced rice crackers and broth, the specialty of Quang Nam also comes with chicken, snakehead fish, eel, beef, shrimp, frog... 
+                        Grilled rice crackers, peanuts, and various fresh herbs enhance the flavor of the dish, stimulating the taste buds of the diners.
+                        <a href="" class="read-more">READ MORE</a>
+                    </p>
+                </div>
+            </section>
+            <section class="sec-2" id="cao-lau" >
+                <img class="animate" id="imgfood" style="--i:0" src="/Images_Chang/CaoLau.jpg" alt="Cao Lau" title="Cao Lau">
+                <div class="text">
+                    <h2 class="animate" style="--i:1">Cao Lau</h2>
+                    <p class="animate" style="--i:2">When visiting Quang Nam, sitting on a high floor to eat "Cao Lau" is a phrase that tourists often hear. 
+                        Cao Lau shares many similarities with Quang-style noodles, but the preparation method is more elaborate. 
+                        In the dish of Cao Lau, the noodles are crispy fried, and the broth is replaced with a little sauce. 
+                        Cao Lau is usually served with a piece of Cao Lau, crispy fried pork skin, green vegetables, bitter vegetables, and peanuts...
+                        <a href="" class="read-more">READ MORE</a>
+                    </p>
+                </div>
+            </section>
+            <section class="sec-3" id="banh-trang">
+                <img class="animate" id="imgfood" style="--i:0" src="/Images_Chang/BanhTrang.jpg" alt="Banh Trang" title="Banh Trang">
+                <div class="text">
+                    <h2 class="animate" style="--i:1">Banh Trang</h2>
+                    <p class="animate" style="--i:2">Rice paper rolls with pork are so popular that it's not difficult for you to enjoy this dish in big cities like Hanoi, Saigon. 
+                        But when you come to Quang Nam, try this dish once in its "hometown" and see how you like it! Dry rice paper is the authentic Dai Loc rice paper. 
+                        Wet rice paper must be freshly made on the day. Pork belly must have fat on both ends. Enjoy it with fresh Tra Que vegetables...
+                        <a href="" class="read-more">READ MORE</a>
+                    </p>
+                </div>
+            </section>
+            <section class="sec-4" id="nem-nuong">
+                <img class="animate" id="imgfood" style="--i:0" src="/Images_Chang/NemNuong.webp" alt="Nem Nuong" title="Nem Nuong">
+                <div class="text">
+                    <h2 class="animate" style="--i:1">Nem Nuong</h2>
+                    <p class="animate" style="--i:2">Grilled pork rolls are available in many regions, but the grilled pork rolls here have their own unique flavor - enticing enough to become a specialty of Quang Nam. 
+                        Grilled pork rolls are made from lean meat mixed with fat and spices that are just right. 
+                        When grilled on charcoal, the pork rolls ooze fat and emit an irresistible aroma...
+                        <a href="" class="read-more">READ MORE</a>
+                    </p>
+                </div>
+            </section>
+            <section class="sec-5" id="banh-canh">
+                <img class="animate" id="imgfood" style="--i:0" src="/Images_Chang/BanhCanh.jpg" alt="Banh Canh" title="Banh Canh">
+                <div class="text">
+                    <h2 class="animate" style="--i:1">Banh Canh</h2>
+                    <p class="animate" style="--i:2">The Banh Canh noodles are made from sticky rice, which does not break apart when boiled in water. 
+                        Depending on the traditional secret recipes of each eatery, Banh Canh is prepared with various ingredients such as pork hock, snakehead fish, shrimp, pork sausage, crab... 
+                        When enjoying it, you will feel the chewy texture of the noodles blending with the rich flavor of the broth, making you want to have another bite.
+                        <a href="" class="read-more">READ MORE</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="slide">
+            <section class="img-slide" style="background-image: url('/Images_Chang/QuangNgai.jpg');">
+                <div class="province">
+                    <h1 data-text="QUANG NGAI">QUANG NGAI</h1>
+                </div>
+            </section>
+            <section class="img-gallery">
+                    <div class="slider-wrapper">
+                        <div class="slider-item">
+                            <h3>DON</h3>
+                            <figure>
+                                <img src="/Images_Chang/Don.jpg" alt="Don" data-target="#don">
+                            </figure>
+                        </div>
+                        <div class="slider-item">
+                            <h3>BANH XEO</h3>
+                            <figure>
+                                <img src="/Images_Chang/BanhXeo.jpg" alt="Banh Xeo" data-target="#banh-xeo">
+                            </figure>
+                        </div>
+                        <div class="slider-item">
+                            <h3>CA BONG</h3>
+                            <figure>
+                                <img src="/Images_Chang/CaBong.jpg" alt="Ca Bong" data-target="#ca-bong">
+                            </figure>
+                        </div>
+                        <div class="slider-item">
+                            <h3>CUM NUM</h3>
+                            <figure>
+                                <img src="/Images_Chang/CumNum.jpg" alt="Cum Num" data-target="#cum-num">
+                            </figure>
+                        </div>
+                        <div class="slider-item">
+                            <h3>OC HUT</h3>
+                            <figure>
+                                <img src="/Images_Chang/OcHut.jpg" alt="Oc Hut" data-target="#oc-hut">
+                            </figure>
+                        </div>                        
+                    </div>
+                    <div class="slider-progress">
+                        <div class="slider-progress-bar"></div>
+                    </div>
+            </section>
+            <section class="sec-1 show" id = "don">
+                <img class="animate" id="imgfood" style="--i:0" src="/Images_Chang/Don.jpg" alt="Don" title="Don">
+                <div class="text">
+                    <h2 class="animate" style="--i:1">Don</h2>
+                    <p class="animate" style="--i:2">Don is one of the famous specialty dishes that you cannot miss. 
+                        Don is a species of mollusk, light yellow in color, as large as a little finger, with thin shell, only as big as a pinky finger and lives in the Ve River and Tra River area.
+                        After being boiled, Don meat is stir-fried with onions, minced garlic, and ground pepper. 
+                        The best Don are boiled in sweet and clear broth, served with crispy grilled rice paper. 
+                        The refreshing taste of the broth, combined with the sweetness of Don meat, brings a very attractive flavor.
+                        <a href="" class="read-more">READ MORE</a>
+                    </p>
+                </div>
+            </section>
+            <section class="sec-2" id = "banh-xeo">
+                <img class="animate" id="imgfood" style="--i:0" src="/Images_Chang/BanhXeo.jpg" alt="Banh Xeo" title="Banh Xeo">
+                <div class="text">
+                    <h2 class="animate" style="--i:1">Banh Xeo</h2>
+                    <p class="animate" style="--i:2">Unlike the northern or western-style sizzling pancakes, Quang Ngai sizzling pancakes are smaller and thinner, and are crispy or soft depending on the customer's preference.
+                        The main ingredients for making sizzling pancakes are rice flour, with fillings such as shrimp, bean sprouts, wood ear mushrooms, or minced duck meat. 
+                        When served with cucumber, bitter banana, lettuce, fish mint, aromatic herbs, chives... and especially the indispensable pure fish sauce mixed with chili and garlic from Ly Son.
+                        <a href="" class="read-more">READ MORE</a>
+                    </p>
+                </div>
+            </section>
+            <section class="sec-3" id = "ca-bong">
+                <img class="animate" id="imgfood" style="--i:0" src="/Images_Chang/CaBong.jpg" alt="Ca Bong" title="Ca Bong">
+                <div class="text">
+                    <h2 class="animate" style="--i:1">Ca Bong</h2>
+                    <p class="animate" style="--i:2">When it comes to Quang Ngai's specialties bought as gifts, you definitely can't overlook the Tra River carp. 
+                        Carp is a gift favored by nature for the land of Quang Ngai, with the highest concentration in the heart of the Tra River.
+                        After being caught, the carp is simmered with fish sauce and sugar until it becomes firm and fragrant, adding a bit of pepper and chili on top makes it even more appealing. 
+                        The most delicious Tra River carp is when enjoyed with a hot bowl of white rice.
+                        <a href="" class="read-more">READ MORE</a>
+                    </p>
+                </div>
+            </section>
+            <section class="sec-4" id = "cum-num">
+                <img class="animate" id="imgfood" style="--i:0" src="/Images_Chang/CumNum.jpg" alt="Cum Num" title="Cum Num">
+                <div class="text">
+                    <h2 class="animate" style="--i:1">Cum Num</h2>
+                    <p class="animate" style="--i:2">Another specialty of Quang Ngai that makes it hard for tourists to resist is the Sa Huynh crab. 
+                        The Sa Huynh crab looks similar to a normal crab and is very nutritious. 
+                        After being caught, they are cleaned and then steamed or grilled with various spices to bring a delicious and attractive flavor.
+                        <a href="" class="read-more">READ MORE</a>
+                    </p>
+                </div>
+            </section>
+            <section class="sec-5" id = "oc-hut">
+                <img class="animate" id="imgfood" style="--i:0" src="/Images_Chang/OcHut.jpg" alt="Oc Hut" title="Oc Hut">
+                <div class="text">
+                    <h2 class="animate" style="--i:1">Oc Hut</h2>
+                    <p class="animate" style="--i:2">Oc Hut is not only a delicious snack but also a pride of the people of Quang region. 
+                        This rustic dish has become a famous specialty, making foreign visitors every time they come here have to find and enjoy it. 
+                        The dish is even more delicious when served with star fruit, laksa leaves, grilled rice paper or ginger fish sauce. 
+                        The chewy, crunchy texture of the snail meat combined with a bit of spicy chili, the fragrant aroma of lemongrass helps "ignite" the taste buds.
+                        <a href="" class="read-more">READ MORE</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="button">
+            <button id="prevButton"><i class="fa-solid fa-caret-left"></i></button>
+            <button id="nextButton"><i class="fa-solid fa-caret-right"></i></button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="central_food.js"></script>
+</body>
+</html>

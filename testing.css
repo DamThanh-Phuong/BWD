@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+ul,ol,dl {
+	margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.4s ease;
+    background: none;
+    box-shadow: none;
+    z-index: 10;
+}
+nav.sticky {
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+nav .nav-content {
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo a {
+    font-weight: 500;
+    font-size: 35px;
+    color: #000000;
+}
+nav.sticky .logo a {
+    color: #fff;
+}
+.nav-content .nav-links {
+    display: flex;
+}
+.nav-content .nav-links li {
+    list-style: none;
+    margin: 0 8px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #0E2431;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 4px;
+    transition: all 0.3s ease;
+}
+.nav-links li a:hover {
+    color: #4070f4;
+}
+nav.sticky .nav-links li a {
+    color: #fff;
+    transition: all 0.4s ease;
+}
+nav.sticky .nav-links li a:hover {
+    color: #0E2431;
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+#active:checked ~ .wrapper {
+    clip-path: circle(75%);
+}
+.wrapper ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+.wrapper ul li {
+    margin: 15px 0;
+}
+.wrapper ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 30px;
+    color: #fff;
+    position: relative;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+.wrapper ul li a:after {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    border-radius: 50px;
+    transform: scaleY(0);
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+.wrapper ul li a:hover:after {
+    transform: scaleY(1);
+}
+.wrapper ul li a:hover {
+    color: #000000;
+}
+
+
+.home {
+    height: 100vh;
+    width: 100%;
+    background: url("images/background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 6px;
+    color: #4070f4;
+}
+
+.text {
+    text-align: justify;
+    padding: 40px 80px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+.menu-btn {
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#active:checked ~ .menu-btn {
+    background: #fff;
+    color: #4158d0;
+	display: fixed;
+	right:0;
+	top:0;
+}
+#active:checked ~ .menu-btn i:before {
+    content: "\f00d";
+}
+input[type="checkbox"] {
+    display: none;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    text-align: center;
+    width: 100%;
+    color: #202020;
+}
+.content .title {
+    font-size: 40px;
+    font-weight: 700;
+}
+.content p {
+    font-size: 35px;
+    font-weight: 600;
+}
+.mobile-header {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    z-index: 3;
+}
+.mobile-header .logo a {
+	font-weight: 500;
+	font-size: 35px;
+	color: #fff;
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+.dropdown:hover .dropdown-menu .dropdown-item{
+    color: black;
+}
+.dropdown-toggle::after {
+    content: none;
+}
+
+.container {
+  position: relative;
+  width: fit-content;
+}
+.mainbox {
+  position: relative;
+  width: 230px;
+  height: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  border-radius: 160px;
+  background-color: rgba(110, 110, 110, 0.3);
+  transition: all 0.3s ease;
+}
+.checkbox:focus {
+  border: none;
+  outline: none;
+}
+.checkbox:checked ~ .mainbox {
+  width: 50px;
+}
+.checkbox:checked ~ .mainbox .search_input {
+  width: 0;
+  height: 0;
+}
+.checkbox:checked ~ .mainbox .iconContainer {
+  padding-right: 8px;
+}
+.checkbox {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  z-index: 2;
+  cursor: pointer;
+  appearance: none;
+}
+.search_input {
+  height: 100%;
+  width: 170px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+.search_input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.iconContainer {
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+.search_icon {
+  fill: rgb(0, 0, 0);
+  font-size: 1.3em;
+}
+
+
+
+@media (max-width: 1100px) {
+    nav {
+        display: none;
+    }
+    .menu-btn {
+        display: flex;
+		z-index: 999;
+    }
+    .wrapper {
+        display: flex;
+    }
+    .mobile-header {
+        display: flex;
+    }
+    #active:checked ~ .mobile-header .logo a{
+        color: #ffffff;
+    }
+	.mobile-header .logo a {
+        color: #000000;
+    }
+}
+@media (min-width: 1101px) {
+    .menu-btn {
+        display: none;
+    }
+    .wrapper {
+        display: none;
+    }
+    .mobile-header {
+        display: none;
+    }
+}

@@ -1,0 +1,100 @@
+header {
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8%;
+    transition: 0.5s ease;
+}
+header .brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 1000;
+    text-transform: uppercase;
+}
+header .navigation .navigation-items a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.2em;
+    font-weight: 800;
+    padding: 1vh 1vw;
+    outline: none;
+}
+header .navigation .navigation-items .dropdown-toggle:hover {
+    color: #c9d6ff;
+}
+.navigation-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-toggle::after {
+    content: none;
+}
+.navigation-items .dropdown-menu {
+    position: absolute;
+    left: 0;
+    background-color: rgba(49, 49, 49, 0.5);
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: 300;
+    padding: 1vh 1vw;
+}
+.navigation-items .dropdown-menu .dropdown-item {
+    font-size: 1em;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.navigation-items .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(49, 49, 49, 0.7);
+    border-radius: 5px;
+}
+@media (max-width: 1100px) {
+    header .navigation {
+        display: none;
+    }
+    header .navigation.active {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+    }
+    .navigation-items .dropdown-menu {
+        background-color: rgba(49, 49, 49, 1);
+    }
+    header .navigation.active .navigation-items {
+        display: flex;
+        width: 60vw;
+        height: 40vh;
+        max-width: 350px;
+        min-height: 260px;
+        border-radius: 40px;
+        z-index: 1;
+        margin: 9vh 9vw 0px 0px;
+        right: 0;
+        background-color: rgba(49, 49, 49, 0.7);
+        flex-direction: column;
+        position: absolute;
+    }
+}
+@media (min-width: 1101px) {
+    header .navigation {
+        display: flex !important;
+    }
+    .toggle {
+        display: none;
+    }
+}
