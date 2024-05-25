@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="centre_explore.css">
+    <title>Centre explore</title>
+</head>
+<body>   
+    <section class="main" id="TH">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Thanh Hoa</h2>
+                    <p>
+                        Thanh Hoa, located in the northern central region of Vietnam, 
+                        is a hidden gem for travelers. Known for its stunning landscapes 
+                        and rich history, it offers a variety of attractions. Sam Son Beach, 
+                        with its golden sands and clear waters, is perfect for a relaxing getaway. 
+                        The ancient citadel of Ho Dynasty, a UNESCO World Heritage site, provides a 
+                        glimpse into Vietnam's imperial past. Additionally, the Ben En National Park 
+                        is a must-visit for nature enthusiasts, boasting diverse flora and fauna. 
+                        Whether you're interested in history, nature, or simply unwinding by the sea, 
+                        Thanh Hoa has something to offer every visitor.    
+                    </p>
+                    <button type="button" id="explore">Explore</button>
+                    <div class="control">
+                        <button id="prev"><i class="fa-solid fa-caret-left"></i></button>
+                        <button id="next"><i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card1">
+                        <h5>Cuc Phuong</h5>
+                        <p>National Park</p>
+                    </div>
+                    <div class="card card2">
+                        <h5>May waterfall</h5>
+                        <p>Thach Thanh District</p>
+                    </div>
+                    <div class="card card3">
+                        <h5>Lang Co</h5>
+                        <p>Dong Son District</p>
+                    </div>
+                    <div class="card card4">
+                        <h5>Hai Tien Beach</h5>
+                        <p>Hoang Hoa District</p>
+                    </div>
+                </div>
+            </div>                 
+        </div>
+    </section>
+
+    <section class="main" id="NA">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Nghe An</h2>
+                    <p>
+                        Nghe An, a province in north-central Vietnam, 
+                        is famous for its beautiful landscapes and cultural heritage. 
+                        Visitors can explore the stunning beaches of Cua Lo, visit the historical 
+                        Kim Lien village, the birthplace of President Ho Chi Minh, and enjoy the natural 
+                        beauty of Pu Mat National Park. The region is also known for its rich traditions, 
+                        folk songs, and festivals. Nghe An offers a unique blend of history, culture, and 
+                        natural beauty for travelers to discover.    
+                    </p>
+                    <button type="button" id="exploreNA">Explore</button>
+                    <div class="control">
+                        <button id="prev"><i class="fa-solid fa-caret-left"></i></button>
+                        <button id="next"><i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card1">
+                        <h5>Sam Son Beach</h5>
+                        <p>Sam Son city</p>
+                    </div>
+                    <div class="card card2">
+                        <h5>Ho Dynasty Citadel</h5>
+                        <p>Vinh Loc District</p>
+                    </div>
+                    <div class="card card3">
+                        <h5>Pu Luong</h5>
+                        <p>Ba Thuoc District</p>
+                    </div>
+                    <div class="card card4">
+                        <h5>Hai Tien Beach</h5>
+                        <p>Hoang Hoa District</p>
+                    </div>
+                </div>
+            </div>                 
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script>
+        document.getElementById('explore').addEventListener('click', function() {
+        window.location.href = './html/ThanhHoa.html';
+        });
+    </script>
+    <script>
+        document.getElementById('exploreNA').addEventListener('click', function() {
+        window.location.href = './html/NgheAn.html';
+        });
+    </script>
+    <script src="centre_explore.js"></script>
+</body>
+</html>

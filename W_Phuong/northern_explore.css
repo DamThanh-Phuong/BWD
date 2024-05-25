@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* main */
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/hanoi.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+#HP .container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/haiphongmain.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+#QN .container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/qnmain.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.TH{
+    width: 100vw;
+    height: 100vh;
+}
+.NA{
+    width: 100vw;
+    height: 100vh;
+}
+.row{
+    display: flex;
+    height: 110%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h2{
+    color: #fff;
+    font-size: 90px;
+}
+p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    gap: 20px;
+    max-width: 600px;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.control{
+    position: absolute;
+    top: 85%;
+    right: 55.5%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.control button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    text-shadow: var(--text-shadow);
+    font-family: monospace;
+    color: #fff;
+    font-weight: bold;
+    font-size: larger;
+    transition: .5s;
+    z-index: 100;
+}
+.control button:hover{
+    background-color: rgb(69, 66, 66);
+}
+.card{
+    width: 230px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+.card1{
+    background-image: url(img/langBac.jpg);
+}
+.card2{
+    background-image: url(img/hoguom.webp);
+}
+.card3{
+    background-image: url(img/vanmieu.jpg);
+}
+.card4{
+    background-image: url(img/nhahat.jpg);
+}
+.card5{
+    background-image: url(img/hp1.jpg);
+}
+.card6{
+    background-image: url(img/hp2.jpg);
+}
+.card7{
+    background-image: url(img/hp3.jpg);
+}
+.card8{
+    background-image: url(img/hp4.jpg);
+}
+.card9{
+    background-image: url(img/qn1.jpg);
+}
+.card10{
+    background-image: url(img/qn2.png);
+}
+.card11{
+    background-image: url(img/qn3.jpg);
+}
+.card12{
+    background-image: url(img/qn4.jpg);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    font-size: 15px;
+    color: #fff;
+    text-shadow: 0 0 5px #9999;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}

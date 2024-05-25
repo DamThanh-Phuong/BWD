@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="northern_explore.css">
+    <title>Northern explore</title>
+</head>
+<body>   
+    <section class="main" id="HN">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Ha Noi</h2>
+                    <p>
+                        Ha Noi, located in the northern region of Vietnam, 
+                        is a hidden gem for travelers. Known for its stunning landscapes 
+                        and rich history, it offers a variety of attractions. Sam Son Beach, 
+                        with its golden sands and clear waters, is perfect for a relaxing getaway. 
+                        The ancient citadel of Ho Dynasty,provides a glimpse into Vietnam's imperial past. 
+                        Additionally, the Ben En National Park 
+                        is a must-visit for nature enthusiasts, boasting diverse flora and fauna. 
+                        Whether you're interested in history, nature, or simply unwinding by the sea, 
+                        Thanh Hoa has something to offer every visitor.    
+                    </p>
+                    <button type="button" id="exploreHN">Explore</button>
+                    <div class="control">
+                        <button id="prev"><i class="fa-solid fa-caret-left"></i></button>
+                        <button id="next"><i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card1">
+                        <h5>Uncle Ho's</h5>
+                        <p>Mausoleum</p>
+                    </div>
+                    <div class="card card2">
+                        <h5>Ho Guom</h5>
+                        <p>Ha Noi</p>
+                    </div>
+                    <div class="card card3">
+                        <h5>Quoc Tu Giam</h5>
+                        <p> Temple</p>
+                    </div>
+                    <div class="card card4">
+                        <h5>Hanoi</h5>
+                        <p>Opera House</p>
+                    </div>
+                </div>
+            </div>                 
+        </div>
+    </section>
+
+    <section class="main" id="HP">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Hai Phong</h2>
+                    <p>
+                        Hai Phong, a province in northern Vietnam, 
+                        is famous for its beautiful landscapes and cultural heritage. 
+                        Visitors can explore the stunning beaches of Cua Lo, visit the historical 
+                        Kim Lien village, the birthplace of President Ho Chi Minh, and enjoy the natural 
+                        beauty of Pu Mat National Park. The region is also known for its rich traditions, 
+                        folk songs, and festivals. Nghe An offers a unique blend of history, culture, and 
+                        natural beauty for travelers to discover.    
+                    </p>
+                    <button type="button" id="exploreHP">Explore</button>
+                    <div class="control">
+                        <button id="prev"><i class="fa-solid fa-caret-left"></i></button>
+                        <button id="next"><i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card5">
+                        <h5>City</h5>
+                        <p>Sam Son city</p>
+                    </div>
+                    <div class="card card6">
+                        <h5>Post office</h5>
+                        <p>Vinh Loc District</p>
+                    </div>
+                    <div class="card card7">
+                        <h5>Station</h5>
+                        <p>Ba Thuoc District</p>
+                    </div>
+                    <div class="card card8">
+                        <h5>City</h5>
+                        <p>Hoang Hoa District</p>
+                    </div>
+                </div>
+            </div>                 
+        </div>
+    </section>
+    <section class="main" id="QN">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Quang Ninh</h2>
+                    <p>
+                        Quang Ninh, a province in northern Vietnam, 
+                        is famous for its beautiful landscapes and cultural heritage. 
+                        Visitors can explore the stunning beaches of Cua Lo, visit the historical 
+                        Kim Lien village, the birthplace of President Ho Chi Minh, and enjoy the natural 
+                        beauty of Pu Mat National Park. The region is also known for its rich traditions, 
+                        folk songs, and festivals. Nghe An offers a unique blend of history, culture, and 
+                        natural beauty for travelers to discover.    
+                    </p>
+                    <button type="button" id="exploreHP">Explore</button>
+                    <div class="control">
+                        <button id="prev"><i class="fa-solid fa-caret-left"></i></button>
+                        <button id="next"><i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card9">
+                        <h5>City</h5>
+                        <p>Sam Son city</p>
+                    </div>
+                    <div class="card card10">
+                        <h5>Post office</h5>
+                        <p>Vinh Loc District</p>
+                    </div>
+                    <div class="card card11">
+                        <h5>Station</h5>
+                        <p>Ba Thuoc District</p>
+                    </div>
+                    <div class="card card12">
+                        <h5>City</h5>
+                        <p>Hoang Hoa District</p>
+                    </div>
+                </div>
+            </div>                 
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script>
+        document.getElementById('exploreHN').addEventListener('click', function() {
+        window.location.href = './html/HaNoi.html';
+        });
+    </script>
+    <script>
+        document.getElementById("next").addEventListener("click", function() {
+        document.getElementById("NA").scrollIntoView({ behavior: "smooth"});
+        });
+    </script>
+    <script src="centre_explore.js"></script>
+</body>
+</html>
